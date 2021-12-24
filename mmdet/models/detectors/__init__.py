@@ -34,6 +34,7 @@ from .solo import SOLO
 from .sparse_rcnn import SparseRCNN
 from .trident_faster_rcnn import TridentFasterRCNN
 from .two_stage import TwoStageDetector
+<<<<<<< HEAD
 from .vfnet import VFNet
 from .yolact import YOLACT
 from .yolo import YOLOV3
@@ -49,4 +50,14 @@ __all__ = [
     'VFNet', 'DETR', 'TridentFasterRCNN', 'SparseRCNN', 'SCNet', 'SOLO',
     'DeformableDETR', 'AutoAssign', 'YOLOF', 'CenterNet', 'YOLOX',
     'TwoStagePanopticSegmentor', 'PanopticFPN', 'QueryInst', 'LAD'
+=======
+from .r3det import R3Det
+
+__all__ = [
+    'ATSS', 'BaseDetector', 'SingleStageDetector', 'TwoStageDetector', 'RPN',
+    'FastRCNN', 'FasterRCNN', 'MaskRCNN', 'CascadeRCNN', 'HybridTaskCascade',
+    'RetinaNet', 'FCOS', 'GridRCNN', 'MaskScoringRCNN', 'RepPointsDetector',
+    'FOVEA', 'FSAF', 'NASFCOS',
+    'R3Det'
+>>>>>>> fork/master
 ]

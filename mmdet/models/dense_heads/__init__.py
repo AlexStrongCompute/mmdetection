@@ -31,6 +31,7 @@ from .rpn_head import RPNHead
 from .sabl_retina_head import SABLRetinaHead
 from .solo_head import DecoupledSOLOHead, DecoupledSOLOLightHead, SOLOHead
 from .ssd_head import SSDHead
+<<<<<<< HEAD
 from .vfnet_head import VFNetHead
 from .yolact_head import YOLACTHead, YOLACTProtonet, YOLACTSegmHead
 from .yolo_head import YOLOV3Head
@@ -49,4 +50,15 @@ __all__ = [
     'AutoAssignHead', 'DETRHead', 'YOLOFHead', 'DeformableDETRHead',
     'SOLOHead', 'DecoupledSOLOHead', 'CenterNetHead', 'YOLOXHead',
     'DecoupledSOLOLightHead', 'LADHead'
+=======
+from .rretina_head import RRetinaHead
+from .rretina_refine_head import RRetinaRefineHead
+
+__all__ = [
+    'AnchorHead', 'GuidedAnchorHead', 'FeatureAdaption', 'RPNHead',
+    'GARPNHead', 'RetinaHead', 'RetinaSepBNHead', 'GARetinaHead', 'SSDHead',
+    'FCOSHead', 'RepPointsHead', 'FoveaHead', 'FreeAnchorRetinaHead',
+    'ATSSHead', 'FSAFHead', 'NASFCOSHead', 'PISARetinaHead', 'PISASSDHead',
+    'RRetinaHead', 'RRetinaRefineHead'
+>>>>>>> fork/master
 ]

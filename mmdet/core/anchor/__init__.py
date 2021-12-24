@@ -5,10 +5,14 @@ from .builder import (ANCHOR_GENERATORS, PRIOR_GENERATORS,
                       build_anchor_generator, build_prior_generator)
 from .point_generator import MlvlPointGenerator, PointGenerator
 from .utils import anchor_inside_flags, calc_region, images_to_levels
+from .rutils import ranchor_inside_flags
+from .ranchor_generator import RAnchorGenerator, PseudoAnchorGenerator
 
 __all__ = [
     'AnchorGenerator', 'LegacyAnchorGenerator', 'anchor_inside_flags',
     'PointGenerator', 'images_to_levels', 'calc_region',
     'build_anchor_generator', 'ANCHOR_GENERATORS', 'YOLOAnchorGenerator',
     'build_prior_generator', 'PRIOR_GENERATORS', 'MlvlPointGenerator'
+    'build_anchor_generator', 'ANCHOR_GENERATORS',
+    'PseudoAnchorGenerator', 'ranchor_inside_flags', 'RAnchorGenerator'
 ]
