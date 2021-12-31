@@ -1,6 +1,6 @@
-ARG PYTORCH="1.6.0"
-ARG CUDA="10.1"
-ARG CUDNN="7"
+ARG PYTORCH="1.10.1"
+ARG CUDA="11.3"
+ARG CUDNN="8.2.1"
 
 FROM pytorch/pytorch:${PYTORCH}-cuda${CUDA}-cudnn${CUDNN}-devel
 
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y ffmpeg libsm6 libxext6 git ninja-build 
 
 # Install r3det-on-mmdetection
 RUN conda clean --all
-RUN git clone https://github.com/SJTU-Thinklab-Det/r3det-on-mmdetection.git /r3det-on-mmdetection
+RUN git clone https://github.com/AlexStrongCompute/mmdetectionAO.git /r3det-on-mmdetection
 WORKDIR /r3det-on-mmdetection
 ENV FORCE_CUDA="1"
 RUN pip install -r requirements/build.txt
