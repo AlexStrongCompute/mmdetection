@@ -12,6 +12,9 @@ RUN apt-get update && apt-get install -y ffmpeg libsm6 libxext6 git ninja-build 
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Install MMCV
+RUN pip install mmcv-full==1.3.17 -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.6.0/index.html
+
 # Install r3det-on-mmdetection
 RUN conda clean --all
 RUN git clone https://github.com/AlexStrongCompute/mmdetectionAO.git /r3det-on-mmdetection
